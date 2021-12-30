@@ -2,7 +2,7 @@
 
 start:
 	make mongo-start
-	node index.js
+	node server.js
 
 mongo-start:
 	brew services start mongodb-community@5.0
