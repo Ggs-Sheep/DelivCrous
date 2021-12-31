@@ -22,5 +22,13 @@
     "password": "$2a$08$Gn7FlIl1CF0on4/joZDQ.OVWIZyUdVP5o4GiwR6MrAZOia7yjhmxG",
     "roles": "[{\"$oid\":\"61cde8f8dc4564a66c4999a3\"}]",
     "username": "sid"
+  },
+  {
+    "__v": 1,
+    "_id": "{\"$oid\":\"61ce472c547fb893aa7993db\"}",
+    "email": "rapgod@gmail.com",
+    "password": "$2a$08$JYU9oMC1Onemo.mxvvvUGua0DHtNptjw.zAviLm2Mv3.XLbfppFTC",
+    "roles": "[{\"$oid\":\"61cde8f8dc4564a66c4999a1\"}]",
+    "username": "Eminem"
   }
 ]

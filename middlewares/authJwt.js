@@ -4,6 +4,7 @@ const db = require("../models");
 const User = db.user;
 const Role = db.role;
 
+// Verify user rights thanks to given token
 verifyToken = (req, res, next) => {
   let token = req.headers["x-access-token"];
 
@@ -20,6 +21,7 @@ verifyToken = (req, res, next) => {
   });
 };
 
+// Checking user rights according to ressources right level requiered
 isAdmin = (req, res, next) => {
   User.findById(req.userId).exec((err, user) => {
     if (err) {

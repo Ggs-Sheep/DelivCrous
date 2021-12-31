@@ -191,6 +191,62 @@
 					]
 				},
 				{
+					"name": "Dish",
+					"item": [
+						{
+							"name": "All Dishes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTE2NiwiZXhwIjoxNjQwOTk1NTY2fQ.85LwjLq3IZ9u5Mp_Cr8m_X_EP59PBm-DYKK5xWrTDVQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/dish",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dish"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "By Name",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTgxMywiZXhwIjoxNjQwOTk2MjEzfQ.OUAUpx8KbLd8jDu-Jn4JMDTWpjd5LgXxTsJD22kcS1Y",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/dish/Nutella",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dish",
+										"Nutella"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "Default Route",
 					"request": {
 						"method": "GET",
@@ -359,6 +415,45 @@
 										"api",
 										"auth",
 										"signup"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dish",
+					"item": [
+						{
+							"name": "Adding Dish as Vendor or Admin",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwNzE0OCwiZXhwIjoxNjQwOTkzNTQ4fQ.eFssQUEsv2HryGnUGhQEKHBtHYkfWVWyNnhldOFYnqU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Riz\",\n    \"description\":\"Provient des arbres à riz\",\n    \"price\":\"1\",\n    \"vendor\":\"clarence\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dish",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dish"
 									]
 								}
 							},

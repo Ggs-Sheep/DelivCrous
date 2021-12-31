@@ -1,0 +1,50 @@
+[
+  {
+    "__v": 0,
+    "_id": "{\"$oid\":\"61ce42e5085d6b715ee95239\"}",
+    "description": "Blé",
+    "name": "Pâtes",
+    "price": "1",
+    "vendor": "{\"$oid\":\"61cdeab6dc4564a66c4999a9\"}"
+  },
+  {
+    "__v": 0,
+    "_id": "{\"$oid\":\"61ce4315085d6b715ee9523e\"}",
+    "description": "bah tomates",
+    "name": "Tomates",
+    "price": "0.5",
+    "vendor": "{\"$oid\":\"61cdeab6dc4564a66c4999a9\"}"
+  },
+  {
+    "__v": 0,
+    "_id": "{\"$oid\":\"61ce432f085d6b715ee95243\"}",
+    "description": "Provient des arbres à riz",
+    "name": "Riz",
+    "price": "1",
+    "vendor": "{\"$oid\":\"61cdeab6dc4564a66c4999a9\"}"
+  },
+  {
+    "__v": 0,
+    "_id": "{\"$oid\":\"61ce43dc085d6b715ee9524a\"}",
+    "description": "Patates écrasées",
+    "name": "Purée",
+    "price": "0.2",
+    "vendor": "{\"$oid\":\"61cdeab6dc4564a66c4999a9\"}"
+  },
+  {
+    "__v": 0,
+    "_id": "{\"$oid\":\"61ce4479ec2afc869870529b\"}",
+    "description": "Farine et Eau",
+    "name": "Pain",
+    "price": "1.50",
+    "vendor": "{\"$oid\":\"61cdeab6dc4564a66c4999a9\"}"
+  },
+  {
+    "__v": 0,
+    "_id": "{\"$oid\":\"61ce46eb547fb893aa7993d4\"}",
+    "description": "Huile de palme",
+    "name": "Nutella",
+    "price": "4",
+    "vendor": "{\"$oid\":\"61cdeb45dc4564a66c4999af\"}"
+  }
+]
