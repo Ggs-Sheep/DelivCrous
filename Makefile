@@ -1,3 +1,6 @@
+import-mongo-data:
+	bash importDB.sh
+
 # MacOs commands
 
 start:
@@ -15,3 +18,21 @@ mongo-stop:
 
 services-list:
 	brew services list
+
+# Ubuntu server commands
+
+mongo-start-u:
+	sudo systemctl start mongod
+	make services-list-u
+
+mongo-stop-u:
+	sudo systemctl stop mongod
+	make services-list-u
+
+mongo-restart-u:
+	sudo systemctl restart mongod
+	make services-list-u
+
+services-list-u:
+	sudo systemctl status mongod
+
