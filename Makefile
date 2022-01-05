@@ -3,20 +3,20 @@ import-mongo-data:
 
 # MacOs commands
 
-start:
+start-m:
 	make mongo-start
 	node server.js
 
-mongo-start:
+mongo-start-m:
 	brew services start mongodb-community@5.0
 	make services-list
 
-mongo-stop:
+mongo-stop-m:
 	brew services stop mongodb-community@5.0
 	make services-list
 
 
-services-list:
+services-list-m:
 	brew services list
 
 # Ubuntu server commands
