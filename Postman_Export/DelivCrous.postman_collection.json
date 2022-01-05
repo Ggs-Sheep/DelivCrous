@@ -6,174 +6,275 @@
 	},
 	"item": [
 		{
-			"name": "GET",
+			"name": "Localhost",
 			"item": [
 				{
-					"name": "GET No Token",
+					"name": "GET",
 					"item": [
 						{
-							"name": "No token Admin",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:3000/api/test/admin",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"api",
-										"test",
-										"admin"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "No token Client",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:3000/api/test/client",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"api",
-										"test",
-										"client"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "No token Vendor",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:3000/api/test/vendor",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"api",
-										"test",
-										"vendor"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
-					"name": "GET Token",
-					"item": [
-						{
-							"name": "Access to Ressources Wrong Token",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-access-token",
-										"value": "wringToken",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost:3000/api/test/client",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"api",
-										"test",
-										"client"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Access to Ressources Good Token Client",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-access-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost:3000/api/test/client",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"api",
-										"test",
-										"client"
-									]
+							"name": "GET No Token",
+							"item": [
+								{
+									"name": "No token Admin",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/test/admin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"admin"
+											]
+										}
+									},
+									"response": []
 								},
-								"description": "Don't forget to get a new token from login"
-							},
-							"response": []
+								{
+									"name": "No token Client",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/test/client",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"client"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "No token Vendor",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/test/vendor",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"vendor"
+											]
+										}
+									},
+									"response": []
+								}
+							]
 						},
 						{
-							"name": "Access to Ressources Good Token Vendor",
+							"name": "GET Token",
+							"item": [
+								{
+									"name": "Access to Ressources Wrong Token",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "wringToken",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/test/client",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"client"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Access to Ressources Good Token Client",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/test/client",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"client"
+											]
+										},
+										"description": "Don't forget to get a new token from login"
+									},
+									"response": []
+								},
+								{
+									"name": "Access to Ressources Good Token Vendor",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/test/vendor",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"vendor"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Access to Ressources Good Token Admin",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/test/admin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"admin"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Dish",
+							"item": [
+								{
+									"name": "All Dishes",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTE2NiwiZXhwIjoxNjQwOTk1NTY2fQ.85LwjLq3IZ9u5Mp_Cr8m_X_EP59PBm-DYKK5xWrTDVQ",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/dish",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"dish"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "By Name",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTgxMywiZXhwIjoxNjQwOTk2MjEzfQ.OUAUpx8KbLd8jDu-Jn4JMDTWpjd5LgXxTsJD22kcS1Y",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/dish/Nutella",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"dish",
+												"Nutella"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Default Route",
 							"request": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "x-access-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
-									"raw": "http://localhost:3000/api/test/vendor",
+									"raw": "http://localhost:3000/",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "3000",
 									"path": [
-										"api",
-										"test",
-										"vendor"
+										""
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "Access to Ressources Good Token Admin",
+							"name": "No token Route",
 							"request": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "x-access-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
-									"raw": "http://localhost:3000/api/test/admin",
+									"raw": "http://localhost:3000/api/test/all",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -182,7 +283,7 @@
 									"path": [
 										"api",
 										"test",
-										"admin"
+										"all"
 									]
 								}
 							},
@@ -191,164 +292,472 @@
 					]
 				},
 				{
-					"name": "Dish",
+					"name": "POST",
 					"item": [
 						{
-							"name": "All Dishes",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-access-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTE2NiwiZXhwIjoxNjQwOTk1NTY2fQ.85LwjLq3IZ9u5Mp_Cr8m_X_EP59PBm-DYKK5xWrTDVQ",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost:3000/dish",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dish"
-									]
+							"name": "Signin",
+							"item": [
+								{
+									"name": "Signin wrong password",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"clarence\",\n    \"password\":\"try\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/auth/signin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Signin good password",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"clarence\",\n    \"password\":\"bigdenergy\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/auth/signin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
 						},
 						{
-							"name": "By Name",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-access-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTgxMywiZXhwIjoxNjQwOTk2MjEzfQ.OUAUpx8KbLd8jDu-Jn4JMDTWpjd5LgXxTsJD22kcS1Y",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost:3000/dish/Nutella",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dish",
-										"Nutella"
-									]
+							"name": "Signup",
+							"item": [
+								{
+									"name": "Signup Already used",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"sid\",\n    \"email\":\"sidbentifraouine@gmail.com\",\n    \"password\":\"damnn\",\n    \"roles\":[\"client\"]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/auth/signup",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										},
+										"description": "Sign up as a client"
+									},
+									"response": []
+								},
+								{
+									"name": "Signup not used",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"Eminem\",\n    \"email\":\"rapgod@gmail.com\",\n    \"password\":\"stan\",\n    \"roles\":[\"client\"]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/auth/signup",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
+						},
+						{
+							"name": "Dish",
+							"item": [
+								{
+									"name": "Adding Dish as Vendor or Admin",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwNzE0OCwiZXhwIjoxNjQwOTkzNTQ4fQ.eFssQUEsv2HryGnUGhQEKHBtHYkfWVWyNnhldOFYnqU",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"Riz\",\n    \"description\":\"Provient des arbres à riz\",\n    \"price\":\"1\",\n    \"vendor\":\"clarence\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/dish",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"dish"
+											]
+										}
+									},
+									"response": []
+								}
+							]
 						}
 					]
-				},
-				{
-					"name": "Default Route",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "No token Route",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/api/test/all",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"test",
-								"all"
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
 		{
-			"name": "POST",
+			"name": "clarenceclaux.fr",
 			"item": [
 				{
-					"name": "Signin",
+					"name": "GET",
 					"item": [
 						{
-							"name": "Signin wrong password",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"username\":\"clarence\",\n    \"password\":\"try\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
+							"name": "GET No Token",
+							"item": [
+								{
+									"name": "No token Admin",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/test/admin",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"admin"
+											]
 										}
-									}
+									},
+									"response": []
 								},
+								{
+									"name": "No token Client",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/test/client",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"client"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "No token Vendor",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/test/vendor",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"vendor"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "GET Token",
+							"item": [
+								{
+									"name": "Access to Ressources Wrong Token",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "wringToken",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/test/client",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"client"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Access to Ressources Good Token Client",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/test/client",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"client"
+											]
+										},
+										"description": "Don't forget to get a new token from login"
+									},
+									"response": []
+								},
+								{
+									"name": "Access to Ressources Good Token Vendor",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/test/vendor",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"vendor"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Access to Ressources Good Token Admin",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDg4NzI1NywiZXhwIjoxNjQwOTczNjU3fQ.Tb5hWzWCDtiHTq7HXR_ViY-OF17YvLsdSRSPvk2BOmc",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/test/admin",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"test",
+												"admin"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Dish",
+							"item": [
+								{
+									"name": "All Dishes",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTE2NiwiZXhwIjoxNjQwOTk1NTY2fQ.85LwjLq3IZ9u5Mp_Cr8m_X_EP59PBm-DYKK5xWrTDVQ",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/dish",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"dish"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "By Name",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwOTgxMywiZXhwIjoxNjQwOTk2MjEzfQ.OUAUpx8KbLd8jDu-Jn4JMDTWpjd5LgXxTsJD22kcS1Y",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/dish/Nutella",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"dish",
+												"Nutella"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Default Route",
+							"request": {
+								"method": "GET",
+								"header": [],
 								"url": {
-									"raw": "http://localhost:3000/api/auth/signin",
+									"raw": "http://clarenceclaux.fr:3000/",
 									"protocol": "http",
 									"host": [
-										"localhost"
+										"clarenceclaux",
+										"fr"
 									],
 									"port": "3000",
 									"path": [
-										"api",
-										"auth",
-										"signin"
+										""
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "Signin good password",
+							"name": "No token Route",
 							"request": {
-								"method": "POST",
+								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"username\":\"clarence\",\n    \"password\":\"bigdenergy\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
-									"raw": "http://localhost:3000/api/auth/signin",
+									"raw": "http://clarenceclaux.fr:3000/api/test/all",
 									"protocol": "http",
 									"host": [
-										"localhost"
+										"clarenceclaux",
+										"fr"
 									],
 									"port": "3000",
 									"path": [
 										"api",
-										"auth",
-										"signin"
+										"test",
+										"all"
 									]
 								}
 							},
@@ -357,107 +766,182 @@
 					]
 				},
 				{
-					"name": "Signup",
+					"name": "POST",
 					"item": [
 						{
-							"name": "Signup Already used",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"username\":\"sid\",\n    \"email\":\"sidbentifraouine@gmail.com\",\n    \"password\":\"damnn\",\n    \"roles\":[\"client\"]\n}",
-									"options": {
-										"raw": {
-											"language": "json"
+							"name": "Signin",
+							"item": [
+								{
+									"name": "Signin wrong password",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"clarence\",\n    \"password\":\"try\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/auth/signin",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
 										}
-									}
+									},
+									"response": []
 								},
-								"url": {
-									"raw": "http://localhost:3000/api/auth/signup",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"api",
-										"auth",
-										"signup"
-									]
-								},
-								"description": "Sign up as a client"
-							},
-							"response": []
+								{
+									"name": "Signin good password",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"clarence\",\n    \"password\":\"bigdenergy\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/auth/signin",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"response": []
+								}
+							]
 						},
 						{
-							"name": "Signup not used",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"username\":\"Eminem\",\n    \"email\":\"rapgod@gmail.com\",\n    \"password\":\"stan\",\n    \"roles\":[\"client\"]\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+							"name": "Signup",
+							"item": [
+								{
+									"name": "Signup Already used",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"sid\",\n    \"email\":\"sidbentifraouine@gmail.com\",\n    \"password\":\"damnn\",\n    \"roles\":[\"client\"]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/auth/signup",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										},
+										"description": "Sign up as a client"
+									},
+									"response": []
 								},
-								"url": {
-									"raw": "http://localhost:3000/api/auth/signup",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"api",
-										"auth",
-										"signup"
-									]
+								{
+									"name": "Signup not used",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"Eminem\",\n    \"email\":\"rapgod@gmail.com\",\n    \"password\":\"stan\",\n    \"roles\":[\"client\"]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/api/auth/signup",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
-					"name": "Dish",
-					"item": [
+							]
+						},
 						{
-							"name": "Adding Dish as Vendor or Admin",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "x-access-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwNzE0OCwiZXhwIjoxNjQwOTkzNTQ4fQ.eFssQUEsv2HryGnUGhQEKHBtHYkfWVWyNnhldOFYnqU",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"name\":\"Riz\",\n    \"description\":\"Provient des arbres à riz\",\n    \"price\":\"1\",\n    \"vendor\":\"clarence\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
+							"name": "Dish",
+							"item": [
+								{
+									"name": "Adding Dish as Vendor or Admin",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwNzE0OCwiZXhwIjoxNjQwOTkzNTQ4fQ.eFssQUEsv2HryGnUGhQEKHBtHYkfWVWyNnhldOFYnqU",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"Riz\",\n    \"description\":\"Provient des arbres à riz\",\n    \"price\":\"1\",\n    \"vendor\":\"clarence\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://clarenceclaux.fr:3000/dish",
+											"protocol": "http",
+											"host": [
+												"clarenceclaux",
+												"fr"
+											],
+											"port": "3000",
+											"path": [
+												"dish"
+											]
 										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dish",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dish"
-									]
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
 						}
 					]
 				}
