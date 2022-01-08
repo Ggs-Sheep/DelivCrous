@@ -9,13 +9,14 @@ const Cart = mongoose.model(
             ref: "User"
         },
     date: String,
-    total: String,
     dishes: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Dish"
       }
-    ]
+    ],
+    state: String,
+    address: String
   })
 );
 

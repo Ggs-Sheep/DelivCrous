@@ -328,13 +328,43 @@
 									"response": []
 								},
 								{
-									"name": "Signin good password",
+									"name": "Signin good password client",
 									"request": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"username\":\"clarence\",\n    \"password\":\"bigdenergy\"\n}",
+											"raw": "{\n    \"username\":\"client\",\n    \"password\":\"client\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/auth/signin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Signin good password client vendor",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\":\"vendor\",\n    \"password\":\"vendor\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -429,19 +459,19 @@
 							"name": "Dish",
 							"item": [
 								{
-									"name": "Adding Dish as Vendor or Admin",
+									"name": "Adding Dish as Vendor",
 									"request": {
 										"method": "POST",
 										"header": [
 											{
 												"key": "x-access-token",
-												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2RlYWI2ZGM0NTY0YTY2YzQ5OTlhOSIsImlhdCI6MTY0MDkwNzE0OCwiZXhwIjoxNjQwOTkzNTQ4fQ.eFssQUEsv2HryGnUGhQEKHBtHYkfWVWyNnhldOFYnqU",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDlhNzQ1NTEzMzA0ZDIwYzlhNGUzMSIsImlhdCI6MTY0MTY1OTAyMiwiZXhwIjoxNjQxNzQ1NDIyfQ.NpBl6VTSsdiD_xTq7WPPd_IhgrJxiBo3AaYrbOFWSkw",
 												"type": "text"
 											}
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"name\":\"Riz\",\n    \"description\":\"Provient des arbres à riz\",\n    \"price\":\"1\",\n    \"vendor\":\"clarence\"\n}",
+											"raw": "{\n    \"name\":\"Riz\",\n    \"description\":\"Provient des arbres à riz\",\n    \"price\":\"1\",\n    \"vendor_id\":\"61d9a745513304d20c9a4e31\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -457,6 +487,153 @@
 											"port": "3000",
 											"path": [
 												"dish"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Cart",
+							"item": [
+								{
+									"name": "PUT Dish to cart",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDlhN2NkNTEzMzA0ZDIwYzlhNGU0MCIsImlhdCI6MTY0MTY1OTE3OSwiZXhwIjoxNjQxNzQ1NTc5fQ.jLehBUDE73TuQGc7kbvnyrSf7mdKchhqcKISreYD5w4",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/cart/61d9a7cd513304d20c9a4e40/61d9ba9d8d6c2e15fb3bf650",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"cart",
+												"61d9a7cd513304d20c9a4e40",
+												"61d9ba9d8d6c2e15fb3bf650"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create Cart",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDlhN2NkNTEzMzA0ZDIwYzlhNGU0MCIsImlhdCI6MTY0MTY2NTI0MiwiZXhwIjoxNjQxNzUxNjQyfQ.nBsQBZCoeS61mdcHC05Vyw9-Q15qk4JzSSTkgmz466M",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/cart/61d9a7cd513304d20c9a4e40",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"cart",
+												"61d9a7cd513304d20c9a4e40"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Validate cart with address",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDlhN2NkNTEzMzA0ZDIwYzlhNGU0MCIsImlhdCI6MTY0MTY2NTY0NCwiZXhwIjoxNjQxNzUyMDQ0fQ.WsNFO1ujauX_eRZvtYOLytS4CNIQO-VXYH1KbPpieUQ",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"address\":\"10 rue de l'avenir\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/cart/61d9a7cd513304d20c9a4e40/validate",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"cart",
+												"61d9a7cd513304d20c9a4e40",
+												"validate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get all carts from a client id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDlhN2NkNTEzMzA0ZDIwYzlhNGU0MCIsImlhdCI6MTY0MTY2NTMyOSwiZXhwIjoxNjQxNzUxNzI5fQ.ROrar52dzvR5K_DW6pmzhr9gcDrOFdhM3c1BMIDkXm0",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/cart/61d9a7cd513304d20c9a4e40",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"cart",
+												"61d9a7cd513304d20c9a4e40"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DELETE Dish from cart",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "x-access-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDlhN2NkNTEzMzA0ZDIwYzlhNGU0MCIsImlhdCI6MTY0MTY2NTg2MywiZXhwIjoxNjQxNzUyMjYzfQ.jA9YIPCx00j3VEh6n7wvqUPBuYu9sgl0Wrz7HqMVWc4",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/cart/61d9a7cd513304d20c9a4e40/61d9ba9d8d6c2e15fb3bf650",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"cart",
+												"61d9a7cd513304d20c9a4e40",
+												"61d9ba9d8d6c2e15fb3bf650"
 											]
 										}
 									},

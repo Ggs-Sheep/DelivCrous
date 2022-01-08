@@ -19,7 +19,7 @@ exports.signup = (req, res) => {
       return;
     }
     // saving user with role
-    if (req.body.roles) {
+    if (req.body.roles.length > 0) {
       Role.find(
         {
           name: { $in: req.body.roles }
@@ -37,7 +37,7 @@ exports.signup = (req, res) => {
               return;
             }
 
-            res.send({ message: "User was registered successfully!" });
+            res.send({ message: "User was registered successfully!", role: user.roles });
           });
         }
       );

@@ -5,7 +5,7 @@ const Dish = mongoose.model(
   new mongoose.Schema({
     name: String,
     description: String,
-    price: String,
+    price: Number,
     vendor: 
         {
             type: mongoose.Schema.Types.ObjectId,

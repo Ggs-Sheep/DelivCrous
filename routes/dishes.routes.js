@@ -25,7 +25,7 @@ module.exports = function(app) {
         });
     
         // Find User id from given vendor name, assumed as vendor since this request is only for vendors
-        User.findOne({ username: req.body.vendor }, (err, vendor) => {
+        User.findById({ _id: req.body.vendor_id }, (err, vendor) => {
           if (err) {
             res.status(500).send({ message: err });
             return;
@@ -50,9 +50,9 @@ module.exports = function(app) {
         .catch(() => res.status(404).end())
       })
     
-      // Get by Name
-      app.get("/dish/:name",[authJwt.verifyToken, authJwt.isClient], (req, res) => {
-        Dish.findOne({ name: req.params.name }, (err, dish) => {
+      // Get by Id
+      app.get("/dish/:id",[authJwt.verifyToken, authJwt.isClient], (req, res) => {
+        Dish.findById({ _id: req.params.id }, (err, dish) => {
           if (err) {
             res.status(500).send({ message: err });
             return;

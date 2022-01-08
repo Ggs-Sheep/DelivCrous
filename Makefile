@@ -4,16 +4,16 @@ import-mongo-data:
 # MacOs commands
 
 start-m:
-	make mongo-start
+	make mongo-start-m
 	node server.js
 
 mongo-start-m:
 	brew services start mongodb-community@5.0
-	make services-list
+	make services-list-m
 
 mongo-stop-m:
 	brew services stop mongodb-community@5.0
-	make services-list
+	make services-list-m
 
 
 services-list-m:
